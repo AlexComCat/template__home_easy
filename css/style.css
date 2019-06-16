@@ -1,0 +1,442 @@
+@import url("reset.css");
+/* @import url("arrow.css"); */
+@import url("fonts.css");
+/* @import url("popup.css"); */
+.header_wrap{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 10% 25px 10%;
+    width: 80%;
+}
+.header_wrap .header_logo{
+    color: #3CC3B5;
+    font-family: 'Lobster';
+    font-size: 49pt;
+    width: 110px;
+}
+.header_wrap .header_logo:hover{
+    cursor: pointer;
+    color: #2DA89B;
+}
+.header_wrap .header_search{
+    align-items: center;
+    border: 1px solid #E1E1E1;
+    display: flex;
+    justify-content: space-between;
+    height: 32px;
+    width: 435px;
+}
+.header_wrap .header_search .header_search_text{
+    width: 70%;
+}
+.header_wrap .header_search input{
+    border: 0;
+    width: 90%;
+}
+.header_wrap .header_search .header_search_icon{
+    background: url("../img/search.png") no-repeat center;
+    height: 22px;
+    margin-right: 10px;
+    width: 22px;
+}
+.header_wrap .header_search .header_search_icon:hover{
+    cursor: pointer;
+}
+.header_wrap .header_pay{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.header_wrap .header_pay .header_basket{
+    background: url("../img/basket.png") no-repeat center;
+    height: 38px;
+    width: 42px;
+}
+.header_wrap .header_pay .header_price{
+    color: #A1A1A1;
+    font: bold 29pt 'BebasNeueRegular';
+    margin-left: 20px;
+}
+.menu_wrap{
+    background-color: #4CCFC1;
+    border-bottom: 3px solid #37B8AE;; 
+}
+.menu_wrap .menu_block{
+    margin: 0 10%; 
+    width: 80%;   
+}
+.menu_wrap .menu_block ul{
+    align-items: center;
+    display: flex;
+    justify-content: space-between; 
+}
+.menu_wrap .menu_block ul li{
+    list-style: none;
+    font: 21pt 'BebasNeueRegular';
+    color: #fff;
+    margin: 10px 0;  
+}
+.menu_wrap .menu_block ul li a:hover{
+    color: #2DA89B;
+    cursor: pointer;
+}
+.line{
+    background-color: #37B8AE;
+    height: 3px;
+    width: 100%;
+}
+.ban_wrap{
+    background: url("../img/background.jpg") repeat left;
+    height: 460px;
+    width: 100%;
+}
+.ban_wrap .ban_center{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    padding: 4.5% 4.5%;
+    width: 80%;
+}
+.ban_wrap .ban_center .ban_img{
+    background: url("../img/t_short.png") no-repeat center;
+    height: 332px;
+    width: 280px;
+}
+.ban_wrap .ban_center .ban_descript{
+    padding: 5px;
+    width: 60.5%;
+}
+.ban_wrap .ban_center .ban_descript .ban_capt{
+    color: #fff; 
+    font: 49pt 'BebasNeueBold';
+    line-height: 0.9;
+    letter-spacing: 2px;    
+}
+.ban_wrap .ban_center .ban_descript .ban_text{
+    color: #fff;
+    font: 12pt 'OpenSans-Regular';
+    letter-spacing: 1px; 
+    line-height: 1.5;
+    margin-top: 15px;
+}
+.ban_wrap .ban_center .ban_descript .ban_btn{
+    align-items: center; 
+    border: 3px solid #fff;
+    border-radius: 8px;
+    color: #fff;    
+    display: flex;
+    font: 21pt 'BebasNeueBold';
+    height: 46px;
+    justify-content: center;
+    margin: 31px 0 0 6px;
+    width: 150px;
+}
+.ban_wrap .ban_center .ban_descript .ban_btn:hover{
+    background-color: #FFF;
+    cursor: pointer;
+    color: #2DA89B;
+}
+.ban_wrap .ban_center .ban_descript .ban_cir_wrap{
+    display: flex;
+    margin-top: 54px;
+}
+.ban_wrap .ban_center .ban_descript .ban_cir_wrap .ban_circle_white{
+    background-color: #fff;
+    border-radius: 50%;
+    height: 9px;
+    margin-left: 13px; 
+    width: 9px;
+}
+.ban_wrap .ban_center .ban_descript .ban_cir_wrap .ban_circle_grey{
+    background-color: #7CD8D0;
+    border-radius: 50%;
+    height: 9px;
+    margin-left: 13px; 
+    width: 9px;
+}
+
+/***** slider *****/
+.sl_wrap{
+    display: flex;
+    height: 190px;
+    width: 100%;
+}
+
+/* left arrow */
+.sl_wrap .sl_arrow_L{
+    height: 100px;
+    margin: 47px 5.22% 47px 2.43%;
+    width: 30px;
+}
+.sl_wrap .sl_arrow_L .sl_left {
+    width: 30px;
+    height: 100px;
+    position: relative;
+  }
+.sl_wrap .sl_arrow_L .sl_left:before,
+.sl_wrap .sl_arrow_L .sl_left:after{
+    content: '';
+    position: absolute; left: 15px;
+    width: 2px;
+    height: 50px;
+    background: #E5E5E5;
+    border-radius: 5px;
+  }
+.sl_wrap .sl_arrow_L .sl_left:before{
+    top: 3px;
+    transform: rotate(30deg);
+  }
+.sl_wrap .sl_arrow_L .sl_left:after{
+    top: 46px;
+    transform: rotate(-30deg);
+}
+.sl_wrap .sl_arrow_L:hover .sl_left:after,
+.sl_wrap .sl_arrow_L:hover .sl_left:before{
+    background: #FF0000;
+    cursor: pointer;
+}
+
+/* right arrow */
+.sl_wrap .sl_arrow_R{
+    height: 100px;
+    margin: 47px 2.43% 47px 5.22%;
+    width: 30px;  
+}
+.sl_wrap .sl_arrow_R .sl_right {
+    width: 30px;
+    height: 100px;
+    position: relative;
+  }
+.sl_arrow_R .sl_right:before,
+.sl_arrow_R .sl_right:after{
+    content: '';
+    position: absolute; left: 15px;
+    width: 2px;
+    height: 50px;
+    background: #E5E5E5;
+    border-radius: 5px;
+}
+.sl_wrap .sl_arrow_R .sl_right:before{
+    top: 3px;
+    transform: rotate(-30deg);
+  }
+.sl_wrap .sl_arrow_R .sl_right:after{
+    top: 46px;
+    transform: rotate(30deg);
+}
+.sl_wrap .sl_arrow_R:hover .sl_right:after,
+.sl_wrap .sl_arrow_R:hover .sl_right:before{
+    background: #FF0000;
+    cursor: pointer;
+}
+
+/* slider card */
+/* slider img */
+.sl_wrap .sl_block_img{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    min-width: 170px;;
+    padding-left: 2.4%;
+    width: 10.833%;
+    
+}
+.sl_wrap .sl_block_img .sl_img_1{
+    height: 143px;
+    background: url("../img/slider_1.jpg") no-repeat center;
+    width: 170px;
+}
+.sl_wrap .sl_block_img .sl_img_2{
+    height: 132px;
+    background: url("../img/slider_2.jpg") no-repeat center;
+    width: 112px;
+}
+.sl_wrap .sl_block_img .sl_img_3{
+    height: 127px;
+    background: url("../img/slider_3.jpg") no-repeat center;
+    width: 71px;
+}
+.sl_wrap .sl_block_text{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    min-width: 80px;
+    padding-left: .8%;
+    width: 12.533%;    
+}
+.sl_wrap .sl_block_text .sl_caption{
+    color: #AFAFAF;
+    font: 19pt 'BebasNeueBold';
+    line-height: 1;
+    margin-top: 5px;
+}
+.sl_wrap .sl_block_text .sl_btn{
+    align-items: center; 
+    background-color: #3CC395;
+    border: 3px solid #3CC395;
+    border-radius: 3px;
+    color: #fff;    
+    display: flex;
+    font: 15pt 'BebasNeueBold';
+    height: 30px;
+    justify-content: center;
+    line-height: 1;
+    margin-top: 10%;
+    width: 60px;
+}
+.sl_wrap .sl_block_text .sl_btn:hover{
+    background-color: #2DA89B;
+    border-color: #2DA89B;
+    cursor: pointer;
+}
+.sl_wrap .vert_line{
+    background-color: #E7E7E7;
+    height: 100%;
+    width: 1px;
+}
+
+/***** caption *****/
+.caption{
+    align-items: center;
+    background: url("../img/background.jpg") repeat left;
+    color: #fff;
+    display: flex;
+    font: 27pt 'BebasNeueBold';
+    height: 60px;
+    padding-left: 15%;
+    padding-top: 5px;
+    width: 85%;
+}
+.prod_wrap{
+    border-right: 2px solid #3DC8B4;
+    height: 690px;
+    width: 99.9%;
+}
+.prod_wrap .prod_line{
+    display: flex;
+    flex-direction: row;    
+    flex-wrap: wrap;        /*flex-wrap*/
+    height: 260px;
+    justify-content: space-around;
+    margin: 0px 10%;
+    padding-top: 48px;
+    min-width: 140px;
+    width: 80%;
+}
+.prod_wrap .prod_line .prod_card{
+    border-bottom: 5px solid #4CCFC1;
+    border-radius: 1px;
+    box-shadow: 0 0 5px 2px #E7E7E7; 
+    height: 260px;
+    min-width: 160px; 
+    width: 20%;
+}
+.prod_wrap .prod_line .prod_card .prod_img_1{ 
+    background: url("../img/promo_1.jpg") no-repeat center;
+    height: 60%;
+    width: 100%
+}
+.prod_wrap .prod_line .prod_card .prod_img_2{ 
+    background: url("../img/promo_2.jpg") no-repeat center;
+    height: 60%;
+    width: 100%
+}
+.prod_wrap .prod_line .prod_card .prod_img_3{ 
+    background: url("../img/promo_3.jpg") no-repeat center;
+    height: 60%;
+    width: 100%
+}
+.prod_wrap .prod_line .prod_card .prod_img_4{ 
+    background: url("../img/promo_4.jpg") no-repeat center;
+    height: 60%;
+    width: 100%
+}
+.prod_wrap .prod_line .prod_card .prod_img_5{ 
+    background: url("../img/promo_5.jpg") no-repeat center;
+    height: 60%;
+    width: 100%
+}
+.prod_wrap .prod_line .prod_card .prod_img_6{ 
+    background: url("../img/promo_6.jpg") no-repeat center;
+    height: 60%;
+    width: 100%
+}
+.prod_wrap .prod_line .prod_card .prod_capt{
+    color: #AFAFAF;
+    font: 19pt 'BebasNeueBold';
+    text-align: center;
+}
+.prod_wrap .prod_line .prod_card .prod_price_wrap{
+    display: flex;
+    justify-content: center;    
+}
+.prod_wrap .prod_line .prod_card .prod_price_wrap .prod_price{
+    color: #AFAFAF;
+    font: 19pt 'BebasNeueBold';
+    height: 35px;   
+    line-height: 35px;
+    padding: 0 15px;
+    width: 40px;
+}
+.prod_wrap .prod_line .prod_card .prod_price_wrap .prod_btn{
+    background-color: #4CCFC1;
+    border: 3px solid #4CCFC1;
+    border-radius: 3px;
+    color: #FFF;
+    font: 15pt 'BebasNeueBold';
+    height: 35px;   
+    line-height: 35px;
+    text-align: center;
+    width: 75px;
+}
+.prod_wrap .prod_line .prod_card .prod_price_wrap .prod_btn:hover{
+    background-color: #2DA89B;
+    border-color: #2DA89B;
+    cursor: pointer;
+}
+
+/***** bread crumbs *****/
+.br_wrap{
+    background-color: #3CC3B5;
+    height: 337px;
+    width: 100%;
+}
+.br_wrap .br_center{
+    display: flex;
+    height: 257px;
+    margin-left: 10%;
+    padding: 40px 0 0 4.5%;
+    width: 80%;
+}
+.br_wrap .br_center .br_block{    
+    min-width: 130px;
+    width: 25%;
+}
+.br_wrap .br_center .br_block span{
+    color: #FFF;
+    font: 25pt 'BebasNeueBold';
+    margin-bottom: 10px;
+}
+.br_wrap .br_center .br_block p{
+    color: #fff;
+    font: 12pt 'OpenSans-Regular';
+    margin: 6px 0 0 5px;
+}
+.br_wrap .br_center .br_block p a:hover{
+    color: #2DA89B;
+    cursor: pointer;
+}
+
+/***** footer *****/
+.footer{
+    background-color: #2DA89B;
+    color: #fff;
+    font: 12pt 'OpenSans-Regular';
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    width: 100%;
+}
